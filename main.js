@@ -50,7 +50,6 @@ document.getElementById("img1").removeAttribute("hidden")
 document.getElementById("img2").removeAttribute("hidden")
 document.querySelector("button").setAttribute("hidden", "")
 Music.volume = 0.3
-Music.loop = true
 Music.play()
 GetInfo().then((data) => {
     let index = 0
@@ -63,4 +62,4 @@ GetInfo().then((data) => {
 })
 }
 
-//Music.onended = function(){window.close()}
+Music.onended = function(){window.close()}
