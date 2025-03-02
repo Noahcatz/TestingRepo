@@ -1,0 +1,45 @@
+body{
+    font-family: sans-serif;
+    overflow: hidden;
+}
+
+main h2{
+    text-align: center;
+}
+
+[hidden]{
+    display: none;
+}
+
+#img1{
+    float: left;
+}
+#img2{
+    float: right;
+}
+
+img{
+    width: 100px;
+    height: 100px;
+    animation: spin 2s linear infinite;
+}
+
+@keyframes spin {
+    0% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+.ButtonContainer{
+    margin: auto;
+    width: max-content;
+}
+
+button{
+    width: 500px;
+    height: 100px;
+    font-size: 50px;
+}
